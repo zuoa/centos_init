@@ -12,7 +12,7 @@ then
 fi
 
 yum update
-yum install gcc openssl openssl-devel zlib-devel git -y
+yum install gcc openssl openssl-devel zlib-devel git wget -y
 
 #update python
 cd $init_dir
