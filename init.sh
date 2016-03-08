@@ -6,7 +6,7 @@
 ############################
 
 init_dir=/opt/init_install/
-if [ ! -d $init_dir];
+if [ ! -d "$init_dir" ];
 then
     mkdir -p $init_dir
 fi
