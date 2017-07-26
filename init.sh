@@ -12,13 +12,13 @@ then
 fi
 
 yum update
-yum install gcc openssl openssl-devel zlib-devel git wget -y
+yum install gcc openssl openssl-devel sqlite-devel zlib-devel git wget -y
 
 #update python
 cd $init_dir
-wget https://www.python.org/ftp/python/2.7.11/Python-2.7.11.tgz --no-check-certificate
-tar zvxf Python-2.7.11.tgz
-cd Python-2.7.11
+wget https://www.python.org/ftp/python/2.7.12/Python-2.7.12.tgz --no-check-certificate
+tar zvxf Python-2.7.12.tgz
+cd Python-2.7.12
 sed -i 's/#zlib/zlib/'  Modules/Setup.dist
 ./configure  && make && make install
 mv /usr/bin/python /usr/bin/python_old
